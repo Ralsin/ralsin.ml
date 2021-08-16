@@ -1,0 +1,14 @@
+paste your chart in here:<br>
+<textarea id="input" cols="50" rows="5"></textarea><br><button onclick="FUCK()">swap notes!</button><br><br>
+
+this will be the output:<br>
+<textarea id="output" cols="50" rows="5"></textarea>
+<script>
+function FUCK(){
+	var output = document.getElementById("input").value.split('"mustHitSection":false').join('"mustHitSection":toTrue')
+        .split('"mustHitSection":true').join('"mustHitSection":false')
+        .split('"mustHitSection":toTrue').join('"mustHitSection":true');;
+  
+	document.getElementById("output").value = output;
+}
+</script>
