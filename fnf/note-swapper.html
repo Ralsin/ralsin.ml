@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FNF Note Swapper</title>
+    <meta content="FNF Note Swapper but it's site" property="og:title" />
+    <meta content="Friday Night Funkin' Note Swapper" property="og:description" />
+    <meta content="https://ralsin.github.io/fnf/note-swapper-assets/fnfns-banner.jpg" property="og:image" />
+    <meta content="#eeff00" data-react-helmet="true" name="theme-color" />
+
+    <link rel="stylesheet" href="./note-swapper-assets/note-swapper.css">
+	<script src="./note-swapper-assets/note-swapper.js"></script>
+  </head>
+  <body>
+    <div style="margin-top: 50px;">
+      <p>Insert chart code here:</p>
+      <textarea id="input" cols="40" rows="5"></textarea><br>
+      <br>
+      <button onclick="swap()">Swap notes!</button><br>
+      <p>and recieve swapped notes here:</p>
+      <textarea id="output" cols="40" rows="5"></textarea>
+      <br><p>or</p><br>
+      <input type="file" accept=".json" id="import-file"></input><br><br><br>
+      <button onclick="yes()">Download swapped .json file.</button><br>
+    </div>
+    <div>
+      <p class="footer" style="bottom: 20px;">Ralsin - lil deco and scripting</p>
+      <p class="footer" style="bottom: 0px;">bit of trolling - ported some code to html</p>
+    </div>
+  </body>
+</html>
