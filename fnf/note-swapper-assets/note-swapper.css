@@ -29,3 +29,7 @@ p.footer {
     position: fixed;
     width: 100%;
 }
+
+textarea {
+	resize: none;
+}
