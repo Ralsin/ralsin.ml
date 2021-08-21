@@ -23,6 +23,8 @@ p, input {
 
 textarea {
     background-color: lightblue;
+    border-radius: 12px;
+    font-family: 'Verdana';
 }
 
 button {

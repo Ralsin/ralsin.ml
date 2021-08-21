@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./note-swapper-assets/note-swapper.css">
 	<script src="./note-swapper-assets/note-swapper.js"></script>
   </head>
-  <body>
+  <body style="margin-top: 50px;">
     <!--<div style="margin-top: 50px;"></div>-->
     <div>
       <p>Insert chart code here:</p>
@@ -20,7 +20,7 @@
       <br>
       <button onclick="swap()">Swap notes!</button><br>
       <p>and recieve swapped notes here:</p>
-      <textarea id="output" cols="40" rows="5" readonly></textarea>
+      <textarea id="output" cols="40" rows="5" readonly spellcheck="false"></textarea>
       <br><p>or</p><br>
       <input type="file" accept=".json" id="import-file"></input><br><br><br>
       <button onclick="yes()">Download swapped .json file.</button><br>
