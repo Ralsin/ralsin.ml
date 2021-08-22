@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Ralsi's corner</title>
-    
-    <link rel="stylesheet" href="./assets/style.css">
-    <script src="./assets/script.js"></script>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
   </head>
-  
+
   <body>
-    <div style="margin-top: 35%;">
-      <h1 style="font-family: Comfortaa; color: #555599; vertical-align: middle;">Nothing to see here.</h1>
+    <div id="button" style="background: #8883;">
+      <p class="disable-select button">
+        About Me
+      </p>
+    </div>
+      <div id="button" style="background: #8883; margin-top: 25vh">
+      <p class="disable-select button">
+        Projects
+      </p>
+    </div>
+    <div id="button" style="background: #8883; margin-top: 50vh">
+      <p class="disable-select button">
+        placeholder
+      </p>
+    </div>
+    <div id="button" style="background: #8883; margin-top: 75vh" onclick="href('github')">
+      <p class="disable-select button">
+        <object id="icon" type="image/svg+xml" data="assets/github.svg" onclick="href('github')"></object>
+        <br>
+        Github
+      </p>
     </div>
   </body>
 </html>
