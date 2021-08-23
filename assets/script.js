@@ -8,7 +8,7 @@ function href(page){
 }
 
 function scrollDown(){
-    document.getElementById('arrow').setAttribute('style', 'rotate: 180deg');
+    document.getElementById('arrow').setAttribute('style', 'transform: rotate(180deg)');
     document.getElementById('yes').setAttribute('style', 'background-position: 0vw -100vh');
     document.getElementsByClassName('scroll')[0].setAttribute('onclick', 'scrollUp()');
     document.getElementsByClassName('scrollB')[0].childNodes[0].nodeValue = 'Up';
