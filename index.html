@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="yes">
 
   <head>
     <meta charset="UTF-8">
@@ -11,27 +11,36 @@
   </head>
 
   <body>
-    <div id="button" style="background: #8883;">
+    <div class="logo">
+      <object id="logo" type="image/svg+xml" data="assets/logo.svg"></object>
+    </div>
+    <div id="button" class="buttondiv" style="margin-top: 12vh;" onclick="aboutme()">
       <p class="disable-select button">
         About Me
       </p>
     </div>
-      <div id="button" style="background: #8883; margin-top: 25vh">
+      <div id="button" class="buttondiv" style="margin-top: 34vh">
       <p class="disable-select button">
         Projects
       </p>
     </div>
-    <div id="button" style="background: #8883; margin-top: 50vh">
+    <div id="button" class="buttondiv" style="margin-top: 56vh" onclick="href('github')">
       <p class="disable-select button">
-        placeholder
-      </p>
-    </div>
-    <div id="button" style="background: #8883; margin-top: 75vh" onclick="href('github')">
-      <p class="disable-select button">
-        <object id="icon" type="image/svg+xml" data="assets/github.svg" onclick="href('github')"></object>
+        <object id="icon" type="image/svg+xml" data="assets/github.svg"></object>
         <br>
         Github
       </p>
     </div>
+    <div id="button" class="buttondiv scroll" style="margin-top: 78vh" onclick="scrollDown()">
+      <p class="disable-select button scrollB">
+        Down
+        <br><br>
+        <object id="arrow" type="image/svg+xml" data="assets/double-arrow.svg"></object>
+      </p>
+    </div>
+    <div id="insert-something-here" style="height: 84vh; margin-top: 100vh; background: #fafa;">
+
+    </div>
+    <p style="color: red; margin: 2vh; bottom: 0; position: fixed; width: auto; filter: blur(3px);">WIP</p>
   </body>
 </html>

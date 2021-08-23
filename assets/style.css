@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 html {
     width: 100%;
     background-color: #112;
-    background: url(./bg1.svg);
+    background: url(./bg.svg);
     aspect-ratio: 2/1;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 101%;
+    height: 200%;
     overflow-y: hidden;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+    background-position: 0vw 0vh;
 }
 body {
     margin: 0;
@@ -23,7 +29,7 @@ div {
 p {
     margin: 0;
     color: #aaa;
-    font-family: 'Comfortaa';
+    font-family: 'Comfortaa','Quicksand';
     font-size: 4vh;
     width: 100%;
     vertical-align: middle;
@@ -34,9 +40,10 @@ p.button {
 
 
 #button {
+    background: #8883;
     display: table;
-    height: 25vh;
-    transition-duration: .5s;
+    height: 22vh;
+    transition-duration: 1s;
     transition-timing-function: cubic-bezier(.19,1,.22,1);
 }
 #button:hover {
@@ -56,6 +63,33 @@ p.button {
 
 /* Icons */
 #icon {
-    width: 7%;
-    height: 7%;
+    width: 7vh;
+    height: 7vh;
+}
+#arrow {
+    width: 5vh;
+    height: 5vh;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+}
+#logo {
+    width: auto;
+    height: 12vh;
+}
+.logo {
+    display: table;
+    width: 100vw;
+    height: 12vh;
+    border-bottom: 5px solid yellow;
+    background: #224f;
+    z-index: 2;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.19,1,.22,1);
+}
+
+
+
+#insert-something-here {
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.19,1,.22,1);
 }
