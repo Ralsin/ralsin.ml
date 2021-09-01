@@ -1,5 +1,3 @@
-var am = false;
-
 function href(page){
     switch (page){
         case 'test': location.href='https://ralsin.github.io/fnf/note-swapper'; break;
@@ -11,7 +9,7 @@ function scrollDown(){
     document.getElementById('arrow').setAttribute('style', 'transform: rotate(180deg)');
     document.getElementById('yes').setAttribute('style', 'background-position: 0vw -100vh');
     document.getElementsByClassName('scroll')[0].setAttribute('onclick', 'scrollUp()');
-    document.getElementsByClassName('scrollB')[0].childNodes[0].nodeValue = 'Up';
+    document.getElementsByClassName('scrollB')[0].childNodes[0].nodeValue = 'Back';
     document.getElementsByClassName('logo')[0].setAttribute('style', 'margin-top: -30vh');
     document.getElementsByClassName('buttondiv')[0].setAttribute('style', 'margin-top: -30vh');
     document.getElementsByClassName('buttondiv')[1].setAttribute('style', 'margin-top: -30vh');
@@ -31,16 +29,19 @@ function scrollUp(){
     document.getElementsByClassName('buttondiv')[2].setAttribute('style', 'margin-top: 56vh');
     document.getElementsByClassName('scroll')[0].setAttribute('style', 'margin-top: 78vh');
     document.getElementsByClassName('scrollB')[0].removeAttribute('style');
-    if(am){
-        document.getElementById('insert-something-here').setAttribute('style', 'height: 84vh; margin-top: 100vh; background: #fafa;')
-    }
+    document.getElementById('embed-div').removeAttribute('style');
     return;
 }
 
 function aboutme(){
-    document.getElementById('insert-something-here').setAttribute('include', './assets/aboutMeText.html')
-    document.getElementById('insert-something-here').setAttribute('style', 'height: 84vh; margin-top: 16vh; background: #fafa;')
+    document.getElementById('embed').setAttribute('data', 'assets/aboutMe.html');
+    document.getElementById('embed-div').setAttribute('style', 'margin-top: 16vh');
     scrollDown();
-    am = true;
+    return;
+}
+function fnfns(){
+    document.getElementById('embed').setAttribute('data', 'fnf/note-swapper');
+    document.getElementById('embed-div').setAttribute('style', 'margin-top: 16vh');
+    scrollDown();
     return;
 }

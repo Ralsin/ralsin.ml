@@ -1,0 +1,41 @@
+html {
+    background-color: #3c3c6499;
+}
+div {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 3vh;
+    color: white;
+}
+
+
+
+[rainbow], [pan] {
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+[rainbow] {
+    animation: move 5s linear infinite;
+    background-image: repeating-linear-gradient(to left, red, orange, yellow, green, cyan, blue, violet, red);
+}
+[pan] {
+    animation: move 5s linear infinite;
+    background-image: linear-gradient(75deg, #ff32a0 0%,#ff32a0 16.6%,#ffff00 16.6%,#ffff00 33.2%,#00ffff 33.2%,#00ffff 49.8%,#ff32a0 49.8%,#ff32a0 66.4%,#ffff00 66.4%,#ffff00 83%,#00ffff 83%,#00ffff 100%);
+}
+
+@keyframes move {
+    100% {background-position: 200%}
+}
+
+
+[color=yellow] {
+    color: #ffff66;
+}
+[color=pinky] {
+    color: #ffaaff
+}
+[striked] {
+    text-decoration: line-through;
+}
