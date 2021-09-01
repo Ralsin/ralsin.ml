@@ -7,7 +7,7 @@ function href(page){
 
 function scrollDown(){
     document.getElementById('arrow').setAttribute('style', 'transform: rotate(180deg)');
-    document.getElementById('yes').setAttribute('style', 'background-position: 0vw -100vh');
+    document.getElementById('yes').setAttribute('style', 'background-position-y: -100vh');
     document.getElementsByClassName('scroll')[0].setAttribute('onclick', 'scrollUp()');
     document.getElementsByClassName('scrollB')[0].childNodes[0].nodeValue = 'Back';
     document.getElementsByClassName('logo')[0].setAttribute('style', 'margin-top: -30vh');
@@ -20,7 +20,7 @@ function scrollDown(){
 }
 function scrollUp(){
     document.getElementById('arrow').removeAttribute('style');
-    document.getElementById('yes').setAttribute('style', 'background-position: 0vw 0vh');
+    document.getElementById('yes').removeAttribute('style');
     document.getElementsByClassName('scroll')[0].setAttribute('onclick', 'scrollDown()');
     document.getElementsByClassName('scrollB')[0].childNodes[0].nodeValue = 'Down';
     document.getElementsByClassName('logo')[0].setAttribute('style', 'margin-top: 0vh')

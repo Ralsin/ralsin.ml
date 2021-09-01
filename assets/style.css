@@ -7,12 +7,12 @@ html {
     background: url(./bg.svg);
     aspect-ratio: 1/1;
     background-repeat: no-repeat;
-    background-size: 100vw 200vh;
+    background-size: 200vw 200vh;
     height: 100%;
     overflow-y: hidden;
     transition-duration: 2s;
     transition-timing-function: cubic-bezier(.19, 1, .22, 1);
-    background-position: 0vw 0vh;
+    background-position-x: -50vw;
 }
 body {
     margin: 0;
