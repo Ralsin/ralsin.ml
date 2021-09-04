@@ -34,13 +34,13 @@ function scrollUp(){
 }
 
 function aboutme(){
-    document.getElementById('embed').setAttribute('data', 'assets/aboutMe.html');
+    document.getElementById('embed').setAttribute('src', 'assets/aboutMe.html');
     document.getElementById('embed-div').setAttribute('style', 'margin-top: 16vh');
     scrollDown();
     return;
 }
 function fnfns(){
-    document.getElementById('embed').setAttribute('data', 'fnf/note-swapper');
+    document.getElementById('embed').setAttribute('src', 'fnf/note-swapper');
     document.getElementById('embed-div').setAttribute('style', 'margin-top: 16vh');
     scrollDown();
     return;
