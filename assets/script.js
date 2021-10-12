@@ -30,7 +30,7 @@ function scrollUp(){
     document.getElementsByClassName('scroll')[0].setAttribute('style', 'margin-top: 78vh');
     document.getElementsByClassName('scrollB')[0].removeAttribute('style');
     document.getElementById('embed-div').removeAttribute('style');
-    document.getElementById('embed').removeAttribute('src');
+    document.getElementById('embed-div').innerHTML= '<iframe id="embed"></iframe>'
     return;
 }
 

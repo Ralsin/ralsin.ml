@@ -4,12 +4,12 @@ function load(){
         i = 0
         do{
             i = i+1
-            var div = document.createElement('img')
-            div.addEventListener('error', (err)=>{err.target.remove()})
-            div.setAttribute('src', `./images/${i}.png`)
-            div.setAttribute('class', `img${i}`)
-            console.log(div)
-            document.body.appendChild(div)
+            var img = document.createElement('img')
+            img.addEventListener('error', (err)=>{err.target.remove()})
+            img.setAttribute('src', `./images/${i}.png`)
+            img.setAttribute('class', `img${i}`)
+            img.setAttribute('onclick', `location.href='./images/${i}.png'`)
+            document.body.appendChild(img)
         } while (i < 20)
     }, 100)
 }
