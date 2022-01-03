@@ -1,45 +1,65 @@
 <!DOCTYPE html>
-<html id="yes">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Ralsi's corner</title>
-
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/script.js"></script>
-  </head>
-
-  <body>
-    <div class="logo">
-      <object id="logo" type="image/svg+xml" data="assets/logo.svg"></object>
-    </div>
-    <div id="button" class="buttondiv" style="margin-top: 12vh;" onclick="aboutme()">
-      <p class="disable-select button">
-        About Me
-      </p>
-    </div>
-      <div id="button" class="buttondiv" style="margin-top: 34vh" onclick="fnfns()">
-      <p class="disable-select button">
-        Projects
-      </p>
-    </div>
-    <div id="button" class="buttondiv" style="margin-top: 56vh" onclick="href('github')">
-      <p class="disable-select button">
-        <object id="icon" type="image/svg+xml" data="assets/github.svg"></object>
-        <br>
-        Github
-      </p>
-    </div>
-    <div id="button" class="buttondiv scroll" style="margin-top: 78vh" onclick="arts()">
-      <p class="disable-select button scrollB">
-        <object id="arrow" type="image/svg+xml" data="assets/double-arrow.svg"></object>
-        <br>
-        Other Stuff
-      </p>
-    </div>
-    <div id="embed-div">
-      <iframe id="embed"></iframe>
-    </div>
-    <p style="color: red; margin: 2vh; bottom: 0; position: fixed; width: auto; filter: blur(3px);">WIP</p>
-  </body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title - Ralsin</title>
+        <link rel="stylesheet" href="./src/main.css">
+        <script src="./src/main.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-button">other</div>
+            <div class="header-button">tabs</div>
+            <div class="header-button">wip</div>
+        </div>
+        <div class="head">
+            <div class="table">
+                <div class="text title">
+                    Ralsin
+                </div>
+                <br>
+                <div class="text" style="margin-bottom: 5vh">
+                    insert cool logo here
+                </div>
+            </div>
+            <div class="arrow" onclick="scrollPage('head')"></div>
+        </div>
+        <div class="body">
+            <h1 style="font-size: 48px;">About Me</h1>
+            <div class="text">
+                · Furry, not cringe one<br>
+                · Pansexual<br>
+                · Not LGBT supporter<br>
+                · Cute fella<br>
+                · Like:<br>
+                <div class="text" style="margin-left: 20px;">
+                    - Cute stuff<br>
+                    - Drawing<br>
+                    - Coding<br>
+                    - RolePlaying<br>
+                    - Hugs<br>
+                    - Music (Chill, Epic or D&B)
+                </div><br>
+                · Dislike:<br>
+                <div class="text" style="margin-left: 20px;">
+                    - Being called cute<br>
+                    - Violence<br>
+                    - Suffering<br>
+                    - Anti-furry (they're cringe)
+                </div>
+            </div>
+            <h1 style="font-size: 48px;">Social & Contact</h1>
+            <div class="text" style="margin-left: 30px">
+                <p class="discord">· <u>Discord</u>: Ralsi#9199</p>
+                <p class="youtube">· <a href="https://www.youtube.com/channel/UC8V1LZmQujNz9s_Atsbe2zw">YouTube</a></p>
+                <p class="twitter">· <a href="https://twitter.com/Ralsin1">Twitter</a></p>
+                <p class="generic">· <a href="https://github.com/Ralsin">Github</a></p>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <p class="footer">Made with love by Ralsi 💚</p>
+            </div>    
+        </footer>
+    </body>
 </html>

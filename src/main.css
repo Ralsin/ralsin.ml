@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+html {
+    color: white;
+    font-family: 'Comfortaa','Quicksand';
+    background-color: #161632;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+body {
+    margin: 0;
+    height: 200vh;
+}
+div.head {
+    display: table;
+    height: 100vh;
+    background-image: url("./bg.svg");
+    background-size: cover;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    text-align: center;
+}
+div.arrow {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-image: url("./arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 10px;
+    left: 0;
+}
+div.arrow:hover {
+    cursor: pointer;
+}
+div.text {
+    display: inline-block;
+    font-size: 25px;
+}
+div.title {
+    font-size: 150px;
+}
+div.table {
+    display: table-cell;
+    width: 100vw;
+    vertical-align: middle;
+}
+div.body {
+    margin-top: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+div.footer {
+    margin-top: 50px;
+    display: table;
+    height: 60px;
+    width: 100%;
+    background-color: #080816;
+    text-align: center;
+}
+p {
+    margin: 3px;
+}
+p.footer {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 18px;
+}
+a {
+    color: white;
+}
+.generic:hover {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(30deg) brightness(3)
+}
+.discord:hover {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(200deg)
+}
+.youtube:hover {
+    filter: invert(0.5) sepia(1) saturate(50) hue-rotate(330deg)
+}
+.twitter:hover {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(180deg)
+}
+
+div.header {
+    position: absolute;
+    display: table;
+    height: 75px;
+    width: 100%;
+    background-color: #161632;
+    border-bottom: 5px solid #c0ff00;
+}
+div.header-button {
+    display: table-cell;
+    width: calc(100%/3);
+    vertical-align: middle;
+    text-align: center;
+    font-size: 32px;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.19,1,.22,1);
+}
+div.header-button:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+}
