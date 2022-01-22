@@ -19,6 +19,7 @@ html::-webkit-scrollbar {
 }
 body {
     margin: 0;
+    min-height: 200%;
 }
 div.head {
     display: table;
@@ -55,9 +56,10 @@ div.table {
     vertical-align: middle;
 }
 div.body {
-    margin-top: 10px;
+    margin-top: 80px;
     margin-left: 10vw;
     margin-right: 10vw;
+    min-height: 89vh;
 }
 div.footer {
     margin-top: 50px;
