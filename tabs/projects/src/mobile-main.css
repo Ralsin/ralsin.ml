@@ -26,13 +26,13 @@ body {
     text-align: center;
 }
 .cell {
-    overflow: auto;
+    overflow: hidden;
+    overflow-y: hidden;
     display: inline-block;
-    margin: 5vw;
-    width: 20vw;
+    margin: 7vw;
+    width: 30vw;
     aspect-ratio: 1;
     box-shadow: 0 0 15px 20px #0f0f24;
-    font-size: 30px;
     cursor: pointer;
     transition: cubic-bezier(.25, .46, .45, .94) .5s;
 }
@@ -58,4 +58,5 @@ div.text {
 p {
     display: table-cell;
     vertical-align: middle;
+    font-size: 2vh;
 }

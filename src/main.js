@@ -1,3 +1,13 @@
+window.onload = ()=>{
+    var r = new XMLHttpRequest()
+    r.open('GET', 'https://fda.ralsi.repl.co')
+    r.onload = ()=>{
+        document.getElementsByClassName('dpfp')[0].setAttribute('src', r.response)
+        document.getElementsByClassName('dpfp')[0].removeAttribute('style')
+    }
+    r.send()
+}
+
 function scrollPage(name){
     scrollBy(0, document.getElementsByClassName(name)[0].scrollHeight + 20)
 }

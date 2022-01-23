@@ -6,6 +6,7 @@ html {
     font-family: 'Comfortaa','Quicksand';
     background-color: #161632;
     -ms-overflow-style: none;
+    overflow-x: hidden;
     scrollbar-width: none;
     scroll-behavior: smooth;
 
@@ -21,7 +22,7 @@ body {
     margin: 0;
     min-height: 200%;
 }
-div.head {
+.head {
     display: table;
     height: 100vh;
     background-image: url("./bg.svg");
@@ -30,7 +31,7 @@ div.head {
     border-bottom-right-radius: 32px;
     text-align: center;
 }
-div.arrow {
+.arrow {
     position: absolute;
     height: 50px;
     width: 100%;
@@ -40,28 +41,29 @@ div.arrow {
     bottom: 10px;
     left: 0;
 }
-div.arrow:hover {
+.arrow:hover {
     cursor: pointer;
 }
-div.text {
+.text {
     display: inline-block;
     font-size: 25px;
 }
-div.title {
+.title {
     font-size: 150px;
+    text-shadow: 5 5 5px #080816;
 }
-div.table {
+.table {
     display: table-cell;
     width: 100vw;
     vertical-align: middle;
 }
-div.body {
+.body {
     margin-top: 80px;
     margin-left: 10vw;
     margin-right: 10vw;
     min-height: 89vh;
 }
-div.footer {
+.footer {
     margin-top: 50px;
     display: table;
     height: 60px;
@@ -93,26 +95,36 @@ a {
     filter: invert(0.5) sepia(1) saturate(5) hue-rotate(180deg)
 }
 
-div.header {
+.header {
     position: absolute;
     display: table;
-    height: 75px;
+    height: 7vh;
     width: 100%;
     background-color: #161632;
-    border-bottom: 5px solid #c0ff00;
+    border-bottom: 0.5vh solid #c0ff00;
+    font-size: 4vh;
 }
-div.header-button {
+.header-button {
     display: table-cell;
     width: calc(100%/3);
     vertical-align: middle;
     text-align: center;
-    font-size: 32px;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(.19,1,.22,1);
 }
-div.header-button:hover {
+.header-button:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     cursor: pointer;
+}
+.dpfp {
+    display: inline-block;
+    aspect-ratio: 1;
+    width: 15vw;
+    min-width: 300px;
+    margin-top: -10px;
+    border-radius: 10%;
+    border: #ff9 solid 5px;
+    box-shadow: 0 0 10px #080816;
 }
