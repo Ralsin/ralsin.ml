@@ -1,6 +1,6 @@
 window.onload = ()=>{
     var r = new XMLHttpRequest()
-    r.open('GET', 'https://fda.ralsi.repl.co')
+    r.open('GET', 'https://discordprofile.ralsi.repl.co/704037343878971424/avatar')
     r.onload = ()=>{
         document.getElementsByClassName('dpfp')[0].setAttribute('src', r.response)
         document.getElementsByClassName('dpfp')[0].removeAttribute('style')

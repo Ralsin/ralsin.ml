@@ -58,4 +58,5 @@ div.text {
 p {
     display: table-cell;
     vertical-align: middle;
+    font-size: 3vw;
 }
