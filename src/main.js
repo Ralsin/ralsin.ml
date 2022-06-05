@@ -2,7 +2,7 @@ window.onload = ()=>{
     var r = new XMLHttpRequest()
     r.open('GET', 'https://discard.ralsin.ml/704037343878971424.json')
     r.onload = ()=>{
-        document.getElementsByClassName('dpfp')[0].setAttribute('src', 'https://cdn.discordapp.com/avatars/'+JSON.parse(r.response).avatar)
+        document.getElementsByClassName('dpfp')[0].setAttribute('src', 'https://cdn.discordapp.com/avatars/'+JSON.parse(r.response).id+'/'+JSON.parse(r.response).avatar+'?size=1024&quality=lossless')
         document.getElementsByClassName('dpfp')[0].removeAttribute('style')
     }
     r.send()
