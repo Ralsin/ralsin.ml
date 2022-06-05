@@ -1,8 +1,8 @@
 window.onload = ()=>{
     var r = new XMLHttpRequest()
-    r.open('GET', 'https://discordprofile.ralsi.repl.co/704037343878971424/avatar')
+    r.open('GET', 'https://discard.ralsin.ml/704037343878971424.json')
     r.onload = ()=>{
-        document.getElementsByClassName('dpfp')[0].setAttribute('src', r.response)
+        document.getElementsByClassName('dpfp')[0].setAttribute('src', 'https://cdn.discordapp.com/avatars/+'r.response.avatar)
         document.getElementsByClassName('dpfp')[0].removeAttribute('style')
     }
     r.send()
