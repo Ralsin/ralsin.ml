@@ -48,6 +48,17 @@ body {
 .trl {
     background-color: #225;
 }
+.rblxcord {
+    background-image: url('../previews/rblxcord.png');
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.Routline {
+    color: #ff5555;
+    text-shadow: #fff 0px 0px 3px, #fff 0px 0px 3px, #fff 0px 0px 3px, #fff 0px 0px 3px, #fff 0px 0px 3px, #fff 0px 0px 3px, #fff 0px 0px 3px, #fff 0px 0px 3px, #fff 0px 0px 3px, #fff 0px 0px 3px;
+    -webkit-font-smoothing: antialiased;
+}
 
 div.text {
     display: table;

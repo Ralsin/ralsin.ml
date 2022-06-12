@@ -17,7 +17,9 @@ function tab(name){
         case 'fnfns':
             href = 'fnf/note-swapper'; break;
         case 'trl':
-            href = '../bots/toralin'
+            href = 'https://ralsin.ml/links/toralin'; break;
+        case 'rblxcord':
+            href = 'https://github.com/Ralsin/rblxcord'
     }
     location.href = href
 }
