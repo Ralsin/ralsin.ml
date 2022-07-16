@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+html {
+    color: white;
+    font-family: 'Comfortaa','Quicksand';
+    background-color: #161632;
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+body {
+    margin: 0;
+    min-height: 200%;
+}
+.head {
+    display: table;
+    height: 100vh;
+    background-image: url("./bg.svg");
+    background-size: cover;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    text-align: center;
+}
+.arrow {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-image: url("./arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 10px;
+    left: 0;
+}
+.arrow:hover {
+    cursor: pointer;
+}
+.text {
+    display: inline-block;
+    font-size: 25px;
+}
+.title {
+    font-size: 12vw;
+    text-shadow: 5 5 5px #080816;
+}
+.table {
+    display: table-cell;
+    width: 100vw;
+    vertical-align: middle;
+}
+.body {
+    margin-top: 80px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-height: 89vh;
+    background-color: #0005;
+    border-radius: 16px;
+    outline: 40px solid #0005;
+}
+.footer {
+    margin-top: 50px;
+    display: table;
+    height: 60px;
+    width: 100%;
+    background-color: #080816;
+    text-align: center;
+}
+p {
+    margin: 3px;
+}
+p.footer {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 18px;
+}
+a {
+    color: white;
+}
+.generic:hover {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(30deg) brightness(3)
+}
+.discord:hover {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(200deg)
+}
+.youtube:hover {
+    filter: invert(0.5) sepia(1) saturate(50) hue-rotate(330deg)
+}
+.twitter:hover {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(180deg)
+}
+
+.header {
+    position: absolute;
+    display: table;
+    height: 7vh;
+    width: 100%;
+    background-color: #161632;
+    border-bottom: 0.5vh solid #c0ff00;
+    font-size: 4vh;
+}
+.header-button {
+    display: table-cell;
+    width: calc(100%/3);
+    vertical-align: middle;
+    text-align: center;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.19,1,.22,1);
+}
+.header-button:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.dpfp {
+    display: inline-block;
+    aspect-ratio: 1;
+    width: 15vw;
+    min-width: 300px;
+    margin-top: -10px;
+    border-radius: 10%;
+    border: #ff9 solid 5px;
+    box-shadow: 0 0 10px #080816;
+}

@@ -4,15 +4,11 @@
 html {
     color: white;
     font-family: 'Comfortaa','Quicksand';
-    background-color: #161632;
-    -ms-overflow-style: none;
-    overflow-x: hidden;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
+    background-color: #112;
 
-    -webkit-user-select: none;  
-    -moz-user-select: none;    
-    -ms-user-select: none;      
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 html::-webkit-scrollbar {
@@ -20,114 +16,106 @@ html::-webkit-scrollbar {
 }
 body {
     margin: 0;
-    min-height: 200%;
-}
-.head {
-    display: table;
     height: 100vh;
-    background-image: url("./bg.svg");
-    background-size: cover;
-    border-bottom-left-radius: 32px;
-    border-bottom-right-radius: 32px;
-    text-align: center;
-}
-.arrow {
-    position: absolute;
-    height: 50px;
-    width: 100%;
-    background-image: url("./arrow.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    bottom: 10px;
-    left: 0;
-}
-.arrow:hover {
-    cursor: pointer;
-}
-.text {
-    display: inline-block;
-    font-size: 25px;
-}
-.title {
-    font-size: 12vw;
-    text-shadow: 5 5 5px #080816;
-}
-.table {
-    display: table-cell;
     width: 100vw;
-    vertical-align: middle;
+    background: url("./wave.svg") repeat-x, url("./wave.svg") repeat-x, url("./wave.svg") repeat-x;
+    background-position: 3200px 80vh, -800px 70vh, 400px 65vh;
+    z-index: -1;
+    animation: wave 100s linear infinite;
+}
+@keyframes wave {
+    100% {
+        background-position: -3200px 80vh, 2400px 70vh, -1200px 65vh;
+    }
 }
 .body {
-    margin-top: 80px;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    min-height: 89vh;
-    background-color: #0005;
-    border-radius: 16px;
-    outline: 40px solid #0005;
-}
-.footer {
-    margin-top: 50px;
-    display: table;
-    height: 60px;
-    width: 100%;
-    background-color: #080816;
+    height: 100vh;
+    width: 100vw;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
-p {
-    margin: 3px;
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 60%;
+    min-height: 480px;
+    max-height: 720px;
+    aspect-ratio: 4/5;
+    background-color: #151525;
+    border-radius: 8px;
+    box-shadow: #000c 10px 10px 3px;
 }
-p.footer {
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 18px;
+.buttons {
+    display: flex;
+    align-items: end;
+    margin-top: -20px;
 }
-a {
-    color: white;
+.nickname {
+    margin-top: 2%;
+    font-size: 48px;
 }
-.generic:hover {
-    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(30deg) brightness(3)
+.button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    max-height: 72px;
+    height: 10%;
+    width: 45%;
+    border: #335 solid 3px;
+    border-radius: 12px;
+    margin: 0 2% 2% 2%;
 }
-.discord:hover {
-    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(200deg)
+.center {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    margin: auto;
 }
-.youtube:hover {
-    filter: invert(0.5) sepia(1) saturate(50) hue-rotate(330deg)
-}
-.twitter:hover {
-    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(180deg)
-}
-
-.header {
-    position: absolute;
-    display: table;
-    height: 7vh;
-    width: 100%;
-    background-color: #161632;
-    border-bottom: 0.5vh solid #c0ff00;
-    font-size: 4vh;
-}
-.header-button {
-    display: table-cell;
-    width: calc(100%/3);
-    vertical-align: middle;
-    text-align: center;
-    transition-duration: 1s;
-    transition-timing-function: cubic-bezier(.19,1,.22,1);
-}
-.header-button:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+.button:hover {
     cursor: pointer;
 }
-.dpfp {
+.button>div>span {
+    font-size: 20px;
+}
+.button:hover>div>span {
+    text-decoration: underline;
+}
+.discord {
+    width: 95%;
+}
+object {
     display: inline-block;
+    max-height: 90%;
     aspect-ratio: 1;
-    width: 15vw;
-    min-width: 300px;
-    margin-top: -10px;
+}
+img {
+    vertical-align:middle;
+}
+#dpfp {
+    aspect-ratio: 1;
+    width: 10%;
+    min-width: 128px;
+    margin-top: -15%;
     border-radius: 10%;
     border: #ff9 solid 5px;
-    box-shadow: 0 0 10px #080816;
+}
+footer {
+    text-align: center;
+}
+.bio {
+    width: 94%;
+    height: 100%;
+    vertical-align: middle;
+    border-top: #ffc solid 3px;
+    padding-top: 5px;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 18px;
+}
+
+.tinted {
+    color: #fff5;
+    font-size: 12px;
 }

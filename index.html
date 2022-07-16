@@ -1,62 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title - Ralsin</title>
-        <link rel="stylesheet" href="./src/main.css">
-        <script src="./src/main.js"></script>
-    </head>
-    <body>
-        <div class="header">
-            <div class="header-button" onclick="tab('g')">Gallery</div>
-            <div class="header-button" onclick="tab('p')">Projects</div>
-            <div class="header-button">/wip/</div>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ralsi</title>
+  <link rel="stylesheet" href="./src/main.css">
+</head>
+
+<body>
+  <div class=body>
+    <div class=card>
+      <div class=profile>
+        <img id=dpfp style=display:none><br>
+        <span class=nickname>Ralsin</span>
+      </div>
+      <div class=bio>
+        <u>Fluffy coder | bad artist / modeler</u><br>
+        Cute fella (I was asked to type it here)<br>
+        Pansexual Genderfluid, <u>Taken</u><br>
+        IDC about pronouns<br><span class=tinted>(LGBTQ+ community gone too far tbh)</span><br>
+        Minecraft, FNF, Roblox gaming <img src=https://cdn.discordapp.com/emojis/997162446412333117.webp?size=40&quality=lossless><br>
+        <!-- <a href="https://media.discordapp.net/attachments/981180367476260887/997845672810250361/cat_prince.jpg">The Funny</a> &
+        <a href="https://media.discordapp.net/attachments/952944461254647918/997847374221283340/S8BaDBOGBBzAg-7Y.mp4">The Funny 2</a><br> -->
+        <img src=https://cdn.discordapp.com/emojis/997134787489841184.webp?size=40&quality=lossless style=margin-top:-8px><br>
+        <img src=https://cdn.discordapp.com/emojis/875075065065119775.webp?size=40&quality=lossless>
+      </div>
+      <div class=buttons>
+        <div class="button github" onclick='href("https://github.com/ralsin")'>
+          <div class=center>
+            <object data="./src/github.svg"></object>
+            <span>GitHub</span>
+          </div>
         </div>
-        <div class="head">
-            <div class="table">
-                <div class="text title">Ralsin</div>
-                <br>
-                <img class="dpfp" style="display: none"></img>
-            </div>
-            <div class="arrow" onclick="scrollPage('head')"></div>
+        <div class="button twitter" onclick='href("https://twitter.com/Ralsin1")'>
+          <div class=center>
+            <object data="./src/twitter.svg"></object>
+            <span>Twitter</span>
+          </div>
         </div>
-        <div class="body">
-            <h1 style="font-size: 48px;">About Me</h1>
-            <div class="text">
-                · Full name: Ralsin Universe<br>
-                · Furry, not cringe one<br>
-                · Cute fella<br>
-                · Good FNF player<br>
-                · Like:<br>
-                <div class="text" style="margin-left: 20px; color: #dfd">
-                    - Cute stuff<br>
-                    - Drawing<br>
-                    - Coding<br>
-                    <p style="margin-left: 15px; color: #cca">< JavaScript (+ Node.js), HTML, CSS, Haxe, C# ></p>
-                    - RolePlaying<br>
-                    - Hugs<br>
-                    - Music (Chill, Epic or D&B)
-                </div><br>
-                · Dislike:<br>
-                <div class="text" style="margin-left: 20px; color: #fdd">
-                    - Being called cute<br>
-                    - Violence<br>
-                    - Suffering<br>
-                    - Anti-furry (they're cringe)
-                </div>
-            </div>
-            <h1 style="font-size: 48px;">Social & Contact</h1>
-            <div class="text" style="margin-left: 30px">
-                <p class="discord">· <u>Discord</u>: Ralsi#9199</p>
-                <p class="youtube">· <a href="https://www.youtube.com/channel/UC8V1LZmQujNz9s_Atsbe2zw">YouTube</a></p>
-                <p class="twitter">· <a href="https://twitter.com/Ralsin1">Twitter</a></p>
-                <p class="generic">· <a href="https://github.com/Ralsin">Github</a></p>
-            </div>
+      </div>
+      <div class="button discord" onclick='copy()'>
+        <div class=center>
+          <object data="./src/discord.svg"></object>
+          <span id=nickname>Loading...</span>
         </div>
-        <footer>
-            <div class="footer">
-                <p class="footer">Made with love by Ralsi 💚</p>
-            </div>    
-        </footer>
-    </body>
+      </div>
+    </div>
+    <span class="footer">Made with love by Ralsi 💚</span>
+  </div>
+</body>
+<script src="./src/main.js"></script>
+
 </html>

@@ -1,23 +1,22 @@
-window.onload = ()=>{
-    var r = new XMLHttpRequest()
-    r.open('GET', 'https://discard.ralsin.ml/704037343878971424.json')
-    r.onload = ()=>{
-        document.getElementsByClassName('dpfp')[0].setAttribute('src', 'https://cdn.discordapp.com/avatars/'+JSON.parse(r.response).id+'/'+JSON.parse(r.response).avatar+'?size=1024&quality=lossless')
-        document.getElementsByClassName('dpfp')[0].removeAttribute('style')
+const nicknamE = document.getElementById('nickname');
+var nickname;
+window.onload = () => {
+    var r = new XMLHttpRequest();
+    r.open('GET', 'https://discard.ralsin.ml/704037343878971424.json');
+    r.onload = () => {
+        var res = JSON.parse(r.response)
+        document.getElementById('dpfp').setAttribute('src', 'https://cdn.discordapp.com/avatars/' + res.id + '/' + res.avatar + '?size=1024&quality=lossless');
+        document.getElementById('dpfp').removeAttribute('style');
+        nickname = res.username + '#' + res.discriminator;
+        nicknamE.innerText = nickname;
     }
-    r.send()
+    r.send();
 }
-
-function scrollPage(name){
-    scrollBy(0, document.getElementsByClassName(name)[0].scrollHeight + 20)
+function href(name) {
+    location.href = name
 }
-function tab(name){
-    var href;
-    switch (name) {
-        case 'g':
-            href = 'tabs/gallery'; break;
-        case 'p':
-            href = 'tabs/projects'; break;
-    }
-    location.href = href
+function copy() {
+    setTimeout(() => nicknamE.innerText = nickname, 2e3)
+    navigator.clipboard.writeText(nickname)
+    nicknamE.innerText = 'Copied!'
 }
